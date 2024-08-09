@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-container{
+    background-color: #ffabd5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.inner-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.proposal-gif{
+    width: clamp(150px,80vw,350px);
+   border-radius: 5px;
+   box-shadow: 0px 0px 15px white;
+}
+.proposal-text{
+    font-family: "Love Ya Like A Sister", cursive;
+    font-size: 3rem;
+    text-align: center;
+    animation: scaler 1s infinite alternate-reverse ;
+    margin-top: 10px;
+}
+@keyframes scaler {
+    from{
+        scale: 0.8;
+    }
+    to{
+        scale: 1.1;
+    }
+}
+.accepted-text{
+    animation: scaleracc 1s infinite alternate-reverse , hilja 1s linear infinite alternate-reverse;
+}
+@keyframes hilja {
+    from{
+        transform: rotate(5deg) translateY(-100px);
+    }
+    to{
+        transform: rotate(-5deg) translateY(100px);
+        
+    }
+}
+@keyframes scaleracc {
+    from{
+        scale: 0.7;
+    }
+    to{
+        scale: 1.5;
+    }
+}
+.proposal-buttons{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    min-width: clamp(300px,70vw,500px);
+
+}
+.proposal-btn{
+    margin-top: 10px;
+    padding: 5px;
+    min-width: 70px;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px white;
+    transition: all 0.5s ;
+    font-weight: bold;
+    font-family: "Playwrite SK", cursive;
+}
+.proposal-btn:hover{
+    scale: 1.1;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: black;}
+#final-reject-btn{
+    position: absolute;
+}

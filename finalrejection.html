@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I Love You !!</title>
+    <link rel="shortcut icon" href="./heart-red-gradient/7233014e-225e-40f3-ae24-abdbe8f028dd.jpg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="inner-container">
+            <img src="./final.webp" alt="" class="proposal-gif">
+            <div class="proposal-text">Ok I will not disturb you from now. <br> But still finally Do you Love me?? </div>
+            <div class="proposal-buttons">
+                <a href="./accepted.html"><div class="proposal-btn">Yes</div></a>
+                <div href="" id="final-reject-btn" onmouseover="move()"><div class="proposal-btn" >No</div></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function move() {
+            const btn = document.getElementById("final-reject-btn");
+            const maxX = window.innerWidth - btn.offsetWidth;
+            const maxY = window.innerHeight - btn.offsetHeight;
+
+            const randomX = Math.floor(Math.random() * maxX);
+            const randomY = Math.floor(Math.random() * maxY);
+            btn.style.left = `${randomX}px`;
+            btn.style.top = `${randomY}px`;
+        }
+    </script>
+</body>
+</html>
