@@ -16,6 +16,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+
 }
 .proposal-gif{
     width: clamp(150px,80vw,350px);
@@ -87,4 +88,5 @@ a{
     color: black;}
 #final-reject-btn{
     position: absolute;
+
 }
